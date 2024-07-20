@@ -8,7 +8,7 @@ services:
       environment:
        - API_ID=0 # 这是您的 Telegram 帐户的 API ID，可以从 my.telegram.org 获取。
        - API_HASH=e83e839202 # 这是您的 Telegram 帐户的 API 哈希值，也可以从 my.telegram.org 获取。
-       - BOT_TOKEN=token # 这是 Telegram Media Streamer Bot 的机器人令牌，可以从 @BotFather 获取。
+       - BOT_TOKEN=token # 这是机器人令牌，可以从 @BotFather 获取。
        - BIN_CHANNEL=ID # 这是日志通道的通道 ID。
        - PORT=9191 # 这是应用程序的端口。
        - NO_PORT=true # 这可以是 True 或 False。如果设置为 True，则不会显示端口。

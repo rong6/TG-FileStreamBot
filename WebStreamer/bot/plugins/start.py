@@ -11,10 +11,9 @@ from WebStreamer.bot import StreamBot
 async def start(_, m: Message):
     if Var.ALLOWED_USERS and not ((str(m.from_user.id) in Var.ALLOWED_USERS) or (m.from_user.username in Var.ALLOWED_USERS)):
         return await m.reply(
-            "You are not in the allowed list of users who can use me. \
-            Check <a href='https://github.com/EverythingSuckz/TG-FileStreamBot#optional-vars'>this link</a> for more info.",
+            "你不在可以使用我的用户的列表中。",
             disable_web_page_preview=True, quote=True
         )
     await m.reply(
-        f'Hi {m.from_user.mention(style="md")}, Send me a file to get an instant stream link.'
+        f'Hi {m.from_user.mention(style="md")} ，直接发送/转发文件，稍等片刻，机器人将会返回直链。'
     )

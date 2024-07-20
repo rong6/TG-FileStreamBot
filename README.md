@@ -11,7 +11,7 @@
 
 <hr>
 
-此仓库源于[EverythingSuckz/TG-FileStreamBot](https://github.com/verythingSuckz/TG-FileStreamBot)的[python](https://github.com/EverythingSuckz/TG-FileStreamBot/tree/python)分支，遵循[GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.zh-cn.html)。
+此仓库源于[EverythingSuckz/TG-FileStreamBot](https://github.com/EverythingSuckz/TG-FileStreamBot)的[python](https://github.com/EverythingSuckz/TG-FileStreamBot/tree/python)分支，遵循[GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.zh-cn.html)。
 
 ## 这是啥
 这是一个Telegram机器人，它将为您提供 Telegram 文件的流链接，无需等待下载完成。   
