@@ -2,16 +2,19 @@ version: "3.8"
 
 services:
   fsb:
-      build: .
+      image: rong6233/tg-filestreambot
       restart: unless-stopped
       container_name: fsb
       environment:
-      # required
-       - API_ID=0 # change this to your ID
-       - API_HASH=e83e839202 # change this to your HASH
-       - BOT_TOKEN=token # enter your bot token
-       - BIN_CHANNEL=ID # paste channel ID
+       - API_ID=0 # 这是您的 Telegram 帐户的 API ID，可以从 my.telegram.org 获取。
+       - API_HASH=e83e839202 # 这是您的 Telegram 帐户的 API 哈希值，也可以从 my.telegram.org 获取。
+       - BOT_TOKEN=token # 这是 Telegram Media Streamer Bot 的机器人令牌，可以从 @BotFather 获取。
+       - BIN_CHANNEL=ID # 这是日志通道的通道 ID。
+       - PORT=9191 # 这是应用程序的端口。
+       - NO_PORT=true # 这可以是 True 或 False。如果设置为 True，则不会显示端口。
+       - FQDN=example.com # 完全限定的域名（如果存在）。默认为 WEB_SERVER_BIND_ADDRESS的值
+       - HAS_SSL=true # 这可以是 True 或 False。如果设置为 True，则将启用 SSL。
       ports:
-       - 127.0.0.1:8000:8000
+       - 127.0.0.1:9191:9191
       volumes:
        - $HOME/TG-FileStreamBot:/app/.env
