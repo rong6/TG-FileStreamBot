@@ -20,9 +20,9 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build and push
+      - name: Build 和 push
         uses: docker/build-push-action@v3
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/TG-FileStreamBot:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/tg-filestreamBot:latest
